@@ -4,4 +4,5 @@ __pycache__/
 *.pyc
 chroma_db/
 data/raw/
+data/sample.db
 .DS_Store
