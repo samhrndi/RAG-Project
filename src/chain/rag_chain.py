@@ -12,7 +12,7 @@ def build_rag_chain(vectorstore):
         api_key=os.getenv("ANTHROPIC_API_KEY"),
         temperature=0.9
     )
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
     return RetrievalQA.from_chain_type(
         llm=llm,
         retriever=retriever,
